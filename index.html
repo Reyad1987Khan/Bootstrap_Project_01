@@ -5,58 +5,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Project One</title>
 
+
 <!-- CDN Link  -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
 rel="stylesheet" 
 integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
 crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar bg-info navbar-expand-lg">
-    <div class="container">
-        <a class="navbar-brand text-white" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#openMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="openMenu">
-            <ul class="navbar-nav me-3 ms-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Products</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
-                <li class="nav-item dropdown"><a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">More</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Social Work</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="#">Brancess</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="#">CSR</a></li>  
-                        <hr class="dropdown-divider">                      
-                        <li><a class="dropdown-item" href="#">Group</a></li>                        
-                    </ul>
-                </li>
-            </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="search">
-                    <button class="btn btn-outline-success text-white" type="button">Submit</button>
-                </form>
-            
-        </div>
+
+<div id="loader">
+  <div class="loader-content text-center">
+    <img src="logo.png" alt="Logo" class="img-fluid" width="120">
+  </div>
+</div>
+<!-- 2. Navbar -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light shadow-sm"> -->
+  <nav class="navbar navbar-light fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" width="80">
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
-
-
+<!-- Side Floating Menu -->
+<div class="side-menu">
   
+  <a href="#" class="menu-item">
+    <i class="bi bi-person"></i>
+    <span>Find Doctors</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <i class="bi bi-calendar"></i>
+    <span>Appointment</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <i class="bi bi-hospital"></i>
+    <span>NHF CCD</span>
+  </a>
+
+</div>
 
 
 
 
+<!-- 3. Hero Section -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="03.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h1>Transforming hearts</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="05.jpg" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="06.jpg" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="11.jpg" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="12.jpg" class="d-block w-100">
+    </div>
+
+  </div>
+
+  <!-- 🔥 Custom Bottom Menu -->
+  <div class="hero-menu">
+    <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active">
+      Where Healing meets Humanity
+    </button>
+
+    <button data-bs-target="#heroCarousel" data-bs-slide-to="1">
+      Expert care for a healthier tomorrow
+    </button>
+
+    <button data-bs-target="#heroCarousel" data-bs-slide-to="2">
+      A Heart Hospital that Heals
+    </button>
+
+    <button data-bs-target="#heroCarousel" data-bs-slide-to="3">
+      Transforming hearts, changing lives
+    </button>
+
+    <button data-bs-target="#heroCarousel" data-bs-slide-to="4">
+      Empowering Hearts with Compassion
+    </button>
+  </div>
+
+
+
+
+  <!-- <div class="hero-menu">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
+
+      <button class="menu-item active">Where Healing meets Humanity</button>
+      <button class="menu-item">Expert care for a healthier tomorrow</button>
+      <button class="menu-item">A Heart Hospital that Heals</button>
+      <button class="menu-item">Transforming hearts, changing lives</button>
+      <button class="menu-item">Empowering Hearts with Compassion</button>
+
+    </div>
+
+  </div>
+</div> -->
+
+</div>
+
+
+
+
+
+<!-- 2.4 About Section -->
+ <section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <img src="about.jpg" class="img-fluid rounded">
+      </div>
+
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>
+          National Heart Foundation is working for better healthcare...
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 2.5 Services Section (Cards) -->
+ <section class="bg-light py-5">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>Health Care</h5>
+            <p>Providing best treatment</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>Training</h5>
+            <p>Medical education programs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>Research</h5>
+            <p>Advanced research facilities</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 2.6 Footer -->
+ <footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>© 2026 National Heart Foundation</p>
+  </div>
+</footer>
 
 
 <!-- CDN link -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
 crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
