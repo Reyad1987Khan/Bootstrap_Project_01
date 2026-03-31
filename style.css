@@ -55,12 +55,10 @@ html {
 /* Fullscreen carousel */
 
 /* ================= HERO ================= */
+
 #heroCarousel {
   position: relative;
-}
 
-#heroCarousel .carousel-item {
-  height: 90vh;
 }
 
 #heroCarousel .carousel-item img {
@@ -73,7 +71,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.156);
   z-index: 1;
 }
 
@@ -93,20 +91,31 @@ html {
 /* ================= MENU ================= */
 .hero-menu {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
+  width: 100%;
   width: 100%;
   z-index: 3;
+  border: 2px solid green;
 }
 
+
 #menuContainer {
-  display: flex;
   gap: 12px;
   overflow-x: auto;
   padding: 10px;
   cursor: grab;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  margin-left:0px;
+  border: 2px solid gold;
 }
+
+@media (min-width: 992px) {
+  #menuContainer {
+    margin-left: 120px;
+  }
+}
+
 
 #menuContainer.active-drag {
   cursor: grabbing;
@@ -117,6 +126,8 @@ html {
 #menuContainer::-webkit-scrollbar {
   display: none;
 }
+
+
 
 .menu-item {
   flex-shrink: 0;
@@ -129,11 +140,17 @@ html {
   white-space: nowrap;
 }
 
+
+
+
+
+
 .menu-item.active {
-  background: #dc3545;
+  background: #af1313;
   color: #fff;
   transform: scale(1.05);
 }
+
 
 .menu-item:hover {
   background: #dc3545;
@@ -170,14 +187,14 @@ html {
 
 
 
-
+/* Side Floating Menu */
 /* পুরো menu container */
 .side-menu {
   position: fixed;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  z-index: 9999;
+  z-index: 1;
 }
 
 /* প্রতিটা button */
@@ -212,6 +229,7 @@ html {
 /* text initially hide (optional animation) */
 .menu-item span {
   white-space: nowrap;
+  cursor: pointer;
 }
 
 /* @media (max-width: 768px) {
